@@ -16,10 +16,8 @@ class HomePage extends StatelessWidget {
         fit: StackFit.expand,
         children: [
           Positioned.fill(
-            child: Image.asset(
-              'assets/welcome.jpg',
-              fit: BoxFit.fitHeight,
-            ),
+            child: FittedBox(
+                fit: BoxFit.fill, child: Image.asset('assets/welcome.jpg')),
           ),
           SafeArea(
             child: Center(

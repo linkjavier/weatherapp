@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:weatherflut/ui/cities/ui_constants.dart';
 import 'package:weatherflut/ui/common/header_widget.dart';
 
 class CitiesPage extends StatelessWidget {
@@ -13,6 +12,10 @@ class CitiesPage extends StatelessWidget {
         iconTheme: IconThemeData(
           color: Colors.black,
         ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.add),
+        onPressed: () {},
       ),
       body: Padding(
         padding: const EdgeInsets.all(25),

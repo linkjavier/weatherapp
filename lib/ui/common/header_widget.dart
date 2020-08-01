@@ -10,12 +10,18 @@ class HeaderWidget extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
-        Text(
-          title,
-          style: TextStyle(
-            fontSize: 23,
-            fontWeight: FontWeight.w700,
+        Padding(
+          padding: const EdgeInsets.only(left: 15.0),
+          child: Text(
+            title,
+            style: TextStyle(
+              fontSize: 23,
+              fontWeight: FontWeight.w700,
+            ),
           ),
+        ),
+        const SizedBox(
+          height: 20,
         ),
         Divider(),
       ],
